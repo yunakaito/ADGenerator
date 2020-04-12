@@ -6,11 +6,72 @@
     <script type="text/javascript" src="function.js"></script>
 </head>
 
+<style>
+    body {
+        font-family: a-otf-futo-min-a101-pr6n, serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    adjective {
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+
+        letter-spacing: 16px;
+
+        font-size: 18pt;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+    }
+
+    body {
+        background-color: #fbfaf5;
+    }
+
+    .wrapper {
+        min-height: 100vh;
+        position: relative;
+        /*←相対位置*/
+        padding-bottom: 120px;
+        /*←footerの高さ*/
+        box-sizing: border-box;
+        /*←全て含めてmin-height:100vhに*/
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+
+        position: absolute;
+        /*←絶対位置*/
+        bottom: 0;
+        /*下に固定*/
+        letter-spacing: 3px;
+        font-size: 9pt;
+
+    }
+</style>
 
 <body>
-    <div id="adj">
-        <p>形容詞</p>
+    <div class="wrapper">
+        <adjective>
+            <div id="adj">
+                <p>形容詞</p>
+            </div>
+        </adjective>
     </div>
+
+    <footer>
+        <p>形容詞生成機 - 中絲悠</p>
+        <a href = "https://yuuno.work">https://yuuno.work</a>
+    </footer>
 </body>
 
 </html>
